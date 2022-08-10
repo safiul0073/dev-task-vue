@@ -1,11 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import Header from "./components/Header.vue";
-import LeftMenu from "./components/LeftMenu.vue";
+import LeftMenu from "./components/SideBar.vue/Index.vue";
 </script>
 
 <template>
-  <div class=" relative min-h-screen flex min-w-fit">
+  <div class="relative min-h-screen flex min-w-fit bg-gray-400">
     
     <LeftMenu />
     <div class="w-full">
