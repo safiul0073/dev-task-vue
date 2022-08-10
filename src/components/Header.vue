@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 h-12 text-white text-center">
+  <div class="bg-gray-900 h-12 w-ful text-white text-center ">
      header top bar
   </div>
 </template>

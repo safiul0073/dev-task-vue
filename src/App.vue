@@ -5,12 +5,18 @@ import LeftMenu from "./components/LeftMenu.vue";
 </script>
 
 <template>
-  <div class="w-full max-h-screen">
-    <Header />
+  <div class=" relative min-h-screen flex min-w-fit">
+    
     <LeftMenu />
+    <div class="w-full">
+      <Header />
+      <div class="flex-1 flex flex-col overflow-y-auto">
+        <RouterView>
+          <router-view />
+        </RouterView>
+      </div>
+    </div>
   </div>
-
-  <RouterView />
 </template>
 
 
