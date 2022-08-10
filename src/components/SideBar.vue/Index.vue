@@ -3,7 +3,7 @@
   <div  :class="styleReturn('w-64', 'w-20')"
     @mouseover="isHovering = true" 
     @mouseout="isHovering = false"
-        class="h-screen bg-slate-800 text-white rounded-br-lg rounded-tr-lg transition-all duration-500 ease-in-out">
+        class="h-screen bg-slate-800 text-white rounded-br-lg transition-all duration-500 ease-in-out">
   <div class="h-20 pl-2 flex justify-center align-center content-center relative">
       <div class="py-2 flex flex-col transition-all duration-150 ease-in-out">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
