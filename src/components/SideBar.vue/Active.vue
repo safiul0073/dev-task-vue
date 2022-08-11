@@ -26,9 +26,7 @@ export default {
     },
     data: function () {
         return {
-            hideStyle: "hidden",
-            title: "Dashboard",
-            animationStyle: "",
+
         };
     },
     methods: {
