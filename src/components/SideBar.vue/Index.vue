@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import Button from './Button.vue';
+import Button from "./Buttons.vue";
 export default {
     components: { Button },
       data: function ()  {
