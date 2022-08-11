@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Shapes from './Shapes.vue';
+import Shapes from './RoundEngle.vue';
 export default {
     components: { Shapes },
     props: {
