@@ -11,9 +11,9 @@ import SideBar from "./components/SideBar.vue/Index.vue";
     <div class="w-full">
       <Header />
       <div class="flex-1 flex flex-col overflow-y-auto">
-        <RouterView>
-          <router-view />
-        </RouterView>
+        
+        <router-view />
+        
       </div>
     </div>
   </div>
