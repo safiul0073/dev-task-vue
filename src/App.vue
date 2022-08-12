@@ -10,7 +10,7 @@ import SideBar from "./components/SideBar.vue/Index.vue";
     <SideBar />
     <div class="w-full">
       <Header />
-      <div class="flex-1 flex flex-col overflow-y-auto">
+      <div class="w-full">
         
         <router-view />
         

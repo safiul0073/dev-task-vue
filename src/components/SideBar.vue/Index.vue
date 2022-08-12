@@ -15,7 +15,9 @@
   </div>
 
     <nav>
-      <Button :isHovering="this.isHovering"/>
+      <Button :isHovering="this.isHovering" v-slot="{ Component }"> 
+          <Component :is="Component" />
+      </Button>
     </nav>
   </div>
 

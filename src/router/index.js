@@ -8,11 +8,19 @@ const router = createRouter({
     routes: [{
         path: "/",
         name: "home",
-        component: Home
+        component: Home,
+        meta: {
+            enterClass: 'animate__animated animate__fadeInUp',
+            leaveClass: 'animate__animated animate__fadeInDown',
+        }
     }, {
         path: "/about",
         name: "about",
-        component: About
+        component: About,
+        meta: {
+            enterClass: 'animate__animated animate__fadeInUp',
+            leaveClass: 'animate__animated animate__fadeInDown',
+        }
     }],
 });
 
