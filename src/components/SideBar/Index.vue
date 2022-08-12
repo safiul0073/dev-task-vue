@@ -1,8 +1,8 @@
 <template>
 
   <div  :class="styleReturn('w-64', 'w-20')"
-    @mouseover="isHovering = true" 
-    @mouseout="isHovering = false"
+        @mouseover="isHovering = true" 
+        @mouseout="isHovering = false"
         class="h-screen bg-slate-800 text-white rounded-br-lg transition-all duration-500 ease-in-out">
   <div class="h-20 pl-2 flex justify-center align-center content-center relative">
       <div class="py-2 flex flex-col transition-all duration-150 ease-in-out">
