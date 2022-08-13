@@ -1,7 +1,10 @@
 <template>
   <div class="flex items-center justify-between py-1 px-4">
         <div class="flex items-center ">
-            <slot></slot>
+            <div class="ml-2">
+                <slot></slot>
+            </div>
+            
             <span class="transition-all duration-500 ease-in-out ml-4" :class="styleReturn('',  'hidden')">{{title}}</span>
         </div>
     </div>

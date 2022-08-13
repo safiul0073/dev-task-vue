@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-800 h-12 w-full text-white text-center overflow-auto ">
+  <div class="bg-slate-800 h-16 w-full text-white text-center relative -z-0">
      header top bar
   </div>
 </template>

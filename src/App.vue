@@ -5,7 +5,7 @@ import SideBar from "./components/SideBar/Index.vue";
 </script>
 
 <template>
-  <div class="relative min-h-screen flex min-w-fit bg-gray-400">
+  <div class=" min-h-screen flex min-w-fit bg-gray-400">
     
     <SideBar />
     <div class="w-full">

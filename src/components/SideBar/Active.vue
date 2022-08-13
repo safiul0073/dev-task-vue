@@ -1,10 +1,5 @@
 <template>
-    <Transition 
-        :enter-active-class="$route.meta.enterClass"
-        :leave-active-class="$route.meta.leaveClass"
-        name="fade"
-        mode="out-in"
-    >
+
     <div class="flex items-center justify-between py-1 px-4 ">
         <div class="flex items-center ">
             <div class="flex items-center ">
@@ -18,7 +13,7 @@
                 </div>
         </div>
     </div>
-    </Transition>
+
 </template>
 
 <script>
@@ -44,12 +39,5 @@ export default {
 </script>
 
 <style scoped>
-    .fade-enter-from,
-    .fade-leave-to {
-        opacity: 0;
-    }
-    .fade-enter-active,
-    .fade-leave-active {
-        transition: opacity .5s ease-in-out;
-    }
+
 </style>
