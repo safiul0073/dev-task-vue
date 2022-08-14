@@ -1,11 +1,12 @@
 
 <template>
-  <div class="bg-gray-600 w-full h-full">
-    <h1>Hello wold!</h1>
+  <div class="h-[calc(100vh_-_64px)] pl-2 p-1 bg-gray-300">
+    <SecondMenu />
   </div>
 </template>
 <script >
+import SecondMenu from '../components/SecondMenu/Index.vue'
 export default {
- 
+    components: { SecondMenu }
 }
 </script>

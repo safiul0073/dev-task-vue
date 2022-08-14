@@ -1,14 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import Header from "./components/Header.vue";
+import Header from "./components/Header/Index.vue";
 import SideBar from "./components/SideBar/Index.vue";
 </script>
 
 <template>
-  <div class=" min-h-screen flex min-w-fit bg-gray-400">
+  <div class=" min-h-screen flex min-w-fit bg-gray-400 relative">
     
     <SideBar />
-    <div class="w-full">
+    <div class=" w-[calc(100%_-_78px)] absolute left-[78px] -z-0">
       <Header />
       <div class="w-full">
         

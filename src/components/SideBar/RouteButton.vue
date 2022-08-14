@@ -1,6 +1,6 @@
 <template>
     <router-link :to="route" class="pl-2 ">
-        <Active :isHovering="isHovering" :title="title" v-if="$route.fullPath === route"> 
+        <Active :isHovering="isHovering" :bgStyle="bgStyle" :title="title" v-if="$route.fullPath === route"> 
             <slot></slot>
         </Active>
             
@@ -27,7 +27,11 @@ export default {
         title: {
             type: String,
             default: 'Dashboard'
-        }
+        },
+        bgStyle: {
+            type: String,
+            default: 'bg-gray-400'
+        },
 
     }
 }
