@@ -1,7 +1,20 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from "vue-router";
 import Header from "./components/Header/Index.vue";
 import SideBar from "./components/SideBar/Index.vue";
+export default {
+  components: {
+    Header,
+    SideBar,
+    RouterLink,
+    RouterView
+  },
+  mounted() {
+    if (this.$route.path === "/") {
+      this.$router.push("/dashboard");
+    }
+  }
+}
 </script>
 
 <template>

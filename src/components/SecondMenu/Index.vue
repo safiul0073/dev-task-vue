@@ -1,7 +1,7 @@
 <template>
   <div class="h-16 w-full flex flex-col lg:flex-row gap-4 lg:gap-12 items-center">
     <BalanceButton />
-    <div class="mx-auto bg-gray-100 w-96 h-10 rounded-full flex flex-row justify-between">
+    <div class="mx-auto bg-gray-100 h-10 rounded-full flex flex-row justify-between">
        <Button v-for="(item, index) in this.routes" :key="index" :route="item" :name="index" />
     </div>
   </div>
@@ -15,7 +15,7 @@ export default {
     data: function () {
         return {
             routes: {
-                Equity: '/dashboard',
+                dash: '/dashboard',
                 Equity: '/dashboard/equity',
                 Assets: '/dashboard/assets',
                 Liabilities: '/dashboard/liabilities',
