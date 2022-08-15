@@ -31,7 +31,6 @@ export default {
     },
     methods: {
         styleReturn: function (preSt, postSt) {
-            console.log(this.bgStyle);
             return this.isHovering ? preSt : postSt;
         }
     },

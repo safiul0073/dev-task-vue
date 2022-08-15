@@ -1,15 +1,39 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from '../views/Home.vue'
+import Home from '../views/Home/Index.vue'
 import About from '../views/About.vue'
 import Investment from '../views/Investment.vue'
 import CashFlow from '../views/CashFlow.vue'
+import Assets from '../views/Home/Asset.vue'
+import Combo from '../views/Home/Combo.vue'
+import Equity from '../views/Home/Equity.vue'
+import Liability from '../views/Home/Liability.vue'
 const router = createRouter({
     history: createWebHistory(
         import.meta.env.BASE_URL),
     routes: [{
-        path: "/",
+        path: "/dashboard",
         name: "home",
         component: Home,
+        children: [{
+                path: "/dashboard/assets",
+                name: "assets",
+                component: Assets,
+            }, {
+                path: "/dashboard/combo",
+                name: "combo",
+                component: Combo,
+            },
+            {
+                path: "/dashboard/liabilities",
+                name: "liability",
+                component: Liability,
+            },
+            {
+                path: "/dashboard/equity",
+                name: "equity",
+                component: Equity,
+            }
+        ]
     }, {
         path: "/about",
         name: "about",

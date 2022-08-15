@@ -1,6 +1,6 @@
 <template>
     <router-link :to="route" class="pl-2 ">
-        <Active :isHovering="isHovering" :bgStyle="bgStyle" :title="title" v-if="$route.fullPath === route"> 
+        <Active :isHovering="isHovering" :bgStyle="bgStyle" :title="title" v-if="findRoute()"> 
             <slot></slot>
         </Active>
             
@@ -33,6 +33,19 @@ export default {
             default: 'bg-gray-400'
         },
 
+    },
+    methods: {
+        findRoute () {
+            let names = this.$route.fullPath
+            let thisRoute = this.route.split('/')[1]
+            let isTrue = false;
+            names.split('/').filter(name => {
+                    if (name === thisRoute) {
+                        isTrue =  true
+                    }
+                })
+            return isTrue
+        }
     }
 }
 </script>

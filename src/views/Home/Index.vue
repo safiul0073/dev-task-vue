@@ -5,7 +5,7 @@
   </div>
 </template>
 <script >
-import SecondMenu from '../components/SecondMenu/Index.vue'
+import SecondMenu from '../../components/SecondMenu/Index.vue'
 export default {
     components: { SecondMenu }
 }
