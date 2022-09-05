@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from '../views/Home/Index.vue'
+import Dashboard from '../views/Home/Index.vue'
 import About from '../views/About.vue'
 import Investment from '../views/Investment.vue'
 import CashFlow from '../views/CashFlow.vue'
@@ -7,13 +7,14 @@ import Assets from '../views/Home/Asset.vue'
 import Combo from '../views/Home/Combo.vue'
 import Equity from '../views/Home/Equity.vue'
 import Liability from '../views/Home/Liability.vue'
+import Home from '../views/Home/Home.vue'
 const router = createRouter({
     history: createWebHistory(
         import.meta.env.BASE_URL),
     routes: [{
         path: "/dashboard",
-        name: "home",
-        component: Home,
+        name: "dashboard",
+        component: Dashboard,
         children: [{
                 path: "/dashboard/assets",
                 name: "assets",
@@ -32,6 +33,10 @@ const router = createRouter({
                 path: "/dashboard/equity",
                 name: "equity",
                 component: Equity,
+            }, {
+                path: "/dashboard",
+                name: "home",
+                component: Home,
             }
         ]
     }, {

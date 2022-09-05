@@ -1,5 +1,5 @@
 <template>
-  <h1>this assets</h1>
+  <h1>this combo</h1>
 </template>
 
 <script>

@@ -5,7 +5,7 @@
                 <slot></slot>
             </div>
             
-            <span class="transition-all duration-500 ease-in-out ml-4" :class="styleReturn('',  'hidden')">{{title}}</span>
+            <span class="transition-opacity duration-500 ease-in-out ml-4" :class="styleReturn('',  'hidden')">{{title}}</span>
         </div>
     </div>
 </template>
@@ -28,6 +28,6 @@ props: {
 }
 </script>
 
-<style>
-
+<style lang="SCSS">
+    
 </style>

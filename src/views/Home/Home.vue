@@ -1,5 +1,7 @@
 <template>
-  <h1>this equity</h1>
+  <div class="font-bold">
+
+  </div>
 </template>
 
 <script>
