@@ -42,12 +42,15 @@
       rounded-bl-[25px] rounded-br-[25px]
     "
   >
-    <div class="w-full h-[444px] bg-gray-100 overflow-y-auto">
+    <div class="w-full h-[444px] bg-gray-100 overflow-y-auto directionSet Flipped">
       <DropButton
-        v-for="(item, index) in dropButtonsData" :key="index"
+        v-for="(item, index) in dropButtonsData"
+        :key="index"
         :amount="item.amount"
         :bgStyle="item.bgStyle"
         :name="item.name"
+        :bgOuter="item.bgStyle"
+        :bgInner="getTextBg(index)"
       ></DropButton>
     </div>
     <div
@@ -73,7 +76,13 @@
 <script>
 import DropButton from "./Dropdown/buttons.vue";
 export default {
-  methods: {},
+  methods: {
+    getTextBg (index){
+      var bg = this.dropButtonsData.find((drop, idx) => idx == index+1)?.bgStyle
+      
+      return "bg-blue-400"
+    }
+  },
   components: { DropButton },
   data: function () {
     return {
@@ -139,5 +148,27 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.directionSet {
+  direction: ltr;
+}
+.Flipped {
+  direction: rtl;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(53, 51, 51);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(38, 37, 37);
+}
 </style>
